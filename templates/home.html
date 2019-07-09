@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../static/image/favicon.ico">
+    <link rel="stylesheet" href="../static/dist/min/dropzone.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
+    <title>Home</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/cover.css" rel="stylesheet">
+</head>
+<body class="text-center">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="navbar-brand" href="#">Logia - Handwriting Recognition System</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="{{ url_for('home') }}">Home</a>
+                <a class="nav-link" href="{{ url_for('about') }}">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Take Your Image Further</h1>
+        <p class="lead">Upload an image, get your handwriting transcribed instantly. Machine learning at the touch of your
+            fingertips. </p>
+        <p class="lead">
+        <form method="POST">
+            <a href="{{ url_for('about') }}" class="btn btn-lg btn-secondary">Learn more</a>
+        </form>
+        </p>
+
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" >
+        </form>
+        </form>
+        <!--        <div id="dropzone">-->
+        <!--            <form action="/predict" method="POST" class="dropzone">-->
+        <!--                <div class="dz-message needsclick">-->
+        <!--                    Drop files here or click to upload.<br>-->
+        <!--                </div>-->
+        <!--            </form>-->
+        <!--        </div>-->
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Powered by <a
+                    href="https://mxnet.apache.org/">MXnet</a>.</p>
+        </div>
+    </footer>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="../../assets/js/vendor/popper.min.js"></script>
+<script src="../static/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+<!--    <script src="../static/dropzone.js"></script>-->
+<script type=text/javascript src="{{url_for('static', filename='dropzone.js') }}"></script>
+
+</body>
+</html>
