@@ -21,14 +21,14 @@ from google.cloud import translate
 
 import os
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "D:\Downloads\sentiment-analysis-219106-228820683116.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = ""
 
 # Instantiates a client
 client = language.LanguageServiceClient()
 translate_client = translate.Client()
 
 app = Flask(__name__)
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+app.secret_key = -
 
 # Setup
 logging.basicConfig(level=logging.DEBUG)
@@ -48,9 +48,9 @@ rnn_hidden_states = 512
 rnn_layers = 2
 max_seq_len = 160
 
-recognition_model = "https://drive.google.com/open?id=1YIn8Y4hHGAFbRZXXnAPZixqdTTcnzTFi"
-paragraph_segmentation_model = "https://drive.google.com/open?id=155vuQ_GjCu2M8wnCAQJFv9KPQaM63gAm"
-word_segmentation_model = "https://drive.google.com/open?id=1aZfNRkz19Vko-4EYNRCnMnvOm75bsR-k"
+recognition_model = -
+paragraph_segmentation_model = -
+word_segmentation_model = -
 
 
 @app.route("/")
