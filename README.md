@@ -13,6 +13,10 @@ Refer  [requirements.txt](https://github.com/georgeblu1/Logia/blob/master/requir
 * [Flask](https://palletsprojects.com/p/flask/) - The web framework used
 * [MXNet Handwriting Recognition Models](https://palletsprojects.com/p/flask/) - AWS Handwriting Recognition 
 
+## Screenshot
+
+![Homepage](https://github.com/georgeblu1/Logia/blob/master/static/image/logia%20front.png)
+![Sample Result](https://github.com/georgeblu1/Logia/blob/master/static/image/logia.png)
 
 ## License
 
