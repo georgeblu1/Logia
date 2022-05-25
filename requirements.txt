@@ -90,7 +90,7 @@ pycrypto==2.6.1
 Pygments==2.3.1
 pygpu==0.7.6
 PyInstaller==3.4
-PyJWT==1.7.1
+PyJWT==2.4.0
 pyOpenSSL==19.0.0
 pyparsing==2.4.0
 pyreadline==2.1
