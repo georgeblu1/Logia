@@ -61,7 +61,7 @@ mock==2.0.0
 msgpack==0.6.1
 mxboard==0.1.0
 mxnet-cu100==1.4.1
-nbconvert==5.4.1
+nbconvert==6.5.1
 nbformat==4.4.0
 networkx==2.3
 nltk==3.2.5
