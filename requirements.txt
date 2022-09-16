@@ -52,7 +52,7 @@ jupyter-core==4.4.0
 kiwisolver==1.1.0
 locket==0.2.0
 macholib==1.11
-Mako==1.0.10
+Mako==1.2.2
 Markdown==3.0.1
 MarkupSafe==1.1.1
 matplotlib==3.0.3
